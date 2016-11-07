@@ -176,7 +176,7 @@ NRF24_RX::received_e CX10_RX::dataReceived()
         break;
     case STATE_ACK:
         // transmit an ACK packet
-    Serial.println(ackCount);
+		Serial.println(ackCount);
         ++ackCount;
         totalDelayUs = 0;
         // send out an ACK on the bind channel, required by deviationTx
